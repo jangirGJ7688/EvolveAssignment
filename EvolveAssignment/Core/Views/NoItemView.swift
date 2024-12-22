@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct NoItemView: View {
+    private var title: String = "No Items to Show"
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.black
+            Text(title)
+                .font(.custom(Fonts.Poppins_Bold, size: 28))
+                .foregroundStyle(.white)
+        }
+        .background(Color.black)
     }
 }
 
